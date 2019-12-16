@@ -1,11 +1,5 @@
+# Dark Mode
 <p align="center">
-    <img src=".github/texstyle_logo.png" width="528" max-width="90%" alt="Stylin" />
-</p>
-
-<p align="center">
-    <a href="https://github.com/rosberry/darkmode/actions">
-      <img src="https://github.com/rosberry/darkmode/workflows/Build/badge.svg" />
-    </a>
     <a href="https://swift.org/">
         <img src="https://img.shields.io/badge/swift-5.0-orange.svg" alt="Swift Version" />
     </a>
@@ -14,11 +8,7 @@
     </a>
 </p>
 
-
-
-## Features
-
-- Backward compatibility
+DarkMode is a small framework that simplify configuration of light and dark user interface styles and reduce checks of available SDKs.
 
 ## Requirements
 
@@ -27,13 +17,40 @@
 
 ## Usage
 
-Override user interface style
+DarkMode contains 4 extensions of UIKit components.
 
-Colors
+1. UIColor extension contains an initializer with light and dark colors:
 
-Images
+   ```swift
+   static let layer = UIColor(light: .init(red: 106 / 255, green: 32 / 255, blue: 119 / 255, alpha: 1),
+                                  dark: .init(red: 138 / 255, green: 76 / 255, blue: 146 / 255, alpha: 1))
+   ```
 
-Check [DarkModeExample](xcode://clone?repo=https%3A%2F%2Fgithub.com%2Frosberry%2Fdarkmode) project for more examples.
+2. UIImageAsset extension contains an initializer with light and dark images:
+
+   ```swift
+   let imageAsset = UIImageAsset(lightModeImage: UIImage(named: "RedRectangle"),
+                                         darkModeImage: UIImage(named: "GreenRectangle"))
+   ```
+
+3. UITraitCollection extension has optional check of different color appearance:
+
+   ```swift
+   override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+           super.traitCollectionDidChange(previousTraitCollection)
+           traitCollection.performForDifferentColorAppearance(comparedTo: previousTraitCollection) {
+               //update related colors
+           }
+       }
+   ```
+
+4. UIWindow extension allows you to override user interface style without SDK checks:
+
+   ```swift
+   UIApplication.shared.keyWindow?.override(.dark)
+   ```
+
+To see how it works together, please check [DarkModeExample](xcode://clone?repo=https%3A%2F%2Fgithub.com%2Frosberry%2Fdarkmode) project for more examples.
 
 ## Installation
 
@@ -46,7 +63,7 @@ github "rosberry/DarkMode"
 
 #### Manually
 
-Drag `DarkMode` folder from [last release](https://github.com/rosberry/DarkMode/releases) into your project.
+Drag `DarkMode` Swift files from [last release](https://github.com/rosberry/DarkMode/releases) into your project.
 
 ## About
 
