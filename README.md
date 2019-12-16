@@ -23,25 +23,25 @@ DarkMode contains 4 extensions of UIKit components.
 
    ```swift
    static let layer = UIColor(light: .init(red: 106 / 255, green: 32 / 255, blue: 119 / 255, alpha: 1),
-                                  dark: .init(red: 138 / 255, green: 76 / 255, blue: 146 / 255, alpha: 1))
+                              dark: .init(red: 138 / 255, green: 76 / 255, blue: 146 / 255, alpha: 1))
    ```
 
 2. UIImageAsset extension contains an initializer with light and dark images:
 
    ```swift
    let imageAsset = UIImageAsset(lightModeImage: UIImage(named: "RedRectangle"),
-                                         darkModeImage: UIImage(named: "GreenRectangle"))
+                                 darkModeImage: UIImage(named: "GreenRectangle"))
    ```
 
 3. UITraitCollection extension has optional check of different color appearance:
 
    ```swift
    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-           super.traitCollectionDidChange(previousTraitCollection)
-           traitCollection.performForDifferentColorAppearance(comparedTo: previousTraitCollection) {
-               //update related colors
-           }
+       super.traitCollectionDidChange(previousTraitCollection)
+       traitCollection.performForDifferentColorAppearance(comparedTo: previousTraitCollection) {
+           //update related colors
        }
+   }
    ```
 
 4. UIWindow extension allows you to override user interface style without SDK checks:
@@ -50,7 +50,7 @@ DarkMode contains 4 extensions of UIKit components.
    UIApplication.shared.keyWindow?.override(.dark)
    ```
 
-To see how it works together, please check [DarkModeExample](xcode://clone?repo=https%3A%2F%2Fgithub.com%2Frosberry%2Fdarkmode) project for more examples.
+To see how it works together, please check [DarkModeExample](xcode://clone?repo=https%3A%2F%2Fgithub.com%2Frosberry%2Fdarkmode) project.
 
 ## Installation
 
