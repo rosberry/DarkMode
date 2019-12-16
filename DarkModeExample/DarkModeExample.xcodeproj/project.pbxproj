@@ -15,9 +15,9 @@
 		067955DF23A4CFB200818636 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067955DD23A4CFB200818636 /* SettingsViewController.swift */; };
 		067955E023A4CFB200818636 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067955DE23A4CFB200818636 /* ViewController.swift */; };
 		067955E323A4CFD200818636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067955E123A4CFD200818636 /* Main.storyboard */; };
-		067955E523A4D00000818636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067955E423A4D00000818636 /* Assets.xcassets */; };
 		067955E723A4D0A100818636 /* UIColor+AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067955E623A4D0A100818636 /* UIColor+AppColor.swift */; };
 		0687502F23A4D54A00469525 /* DarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0687502E23A4D54A00469525 /* DarkMode.framework */; };
+		0687505823A759F400469525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0687505723A759F400469525 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +31,10 @@
 		067955DD23A4CFB200818636 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		067955DE23A4CFB200818636 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		067955E223A4CFD200818636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		067955E423A4D00000818636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../DarkMode1/DarkMode/Assets.xcassets; sourceTree = "<group>"; };
 		067955E623A4D0A100818636 /* UIColor+AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColor.swift"; sourceTree = "<group>"; };
 		067955E823A4D0E100818636 /* DarkModeExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkModeExample.entitlements; sourceTree = "<group>"; };
 		0687502E23A4D54A00469525 /* DarkMode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DarkMode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0687505723A759F400469525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +76,9 @@
 				067955DD23A4CFB200818636 /* SettingsViewController.swift */,
 				067955D823A4CBD100818636 /* UserDefaults+InterfaceStyle.swift */,
 				067955E623A4D0A100818636 /* UIColor+AppColor.swift */,
+				0687505723A759F400469525 /* Assets.xcassets */,
 				067955E123A4CFD200818636 /* Main.storyboard */,
 				067955CF23A4CA9F00818636 /* LaunchScreen.storyboard */,
-				067955E423A4D00000818636 /* Assets.xcassets */,
 				067955D223A4CA9F00818636 /* Info.plist */,
 				067955E823A4D0E100818636 /* DarkModeExample.entitlements */,
 			);
@@ -161,7 +161,7 @@
 			files = (
 				067955D123A4CA9F00818636 /* LaunchScreen.storyboard in Resources */,
 				067955DC23A4CF0600818636 /* SampleCode.xcconfig in Resources */,
-				067955E523A4D00000818636 /* Assets.xcassets in Resources */,
+				0687505823A759F400469525 /* Assets.xcassets in Resources */,
 				067955E323A4CFD200818636 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
