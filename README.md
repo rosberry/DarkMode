@@ -6,6 +6,9 @@
     <a href="https://github.com/Carthage/Carthage">
         <img src="https://img.shields.io/badge/Carthage-compatible-green.svg" alt="Carthage Compatible" />
     </a>
+    <a href="https://github.com/apple/swift-package-manager">
+        <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
+    </a>
 </p>
 
 DarkMode is a small framework that simplify configuration of light and dark user interface styles and reduce checks of available SDKs.
