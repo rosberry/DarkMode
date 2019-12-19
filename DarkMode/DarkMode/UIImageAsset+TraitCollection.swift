@@ -38,7 +38,7 @@ public extension UIImageAsset {
     /// Returns the variant of the image that best matches the current trait collection. For early SDKs returns the image for light user interface style.
     func image() -> UIImage {
         if #available(iOS 13.0, tvOS 13.0, *) {
-            image(with: .current)
+            return image(with: .current)
         }
         return image(with: .light)
     }

@@ -19,6 +19,8 @@ public extension UIColor {
                 return light
             }
         }
-        self.init(cgColor: light.cgColor)
+        else {
+            self.init(cgColor: light.cgColor)
+        }
     }
 }
