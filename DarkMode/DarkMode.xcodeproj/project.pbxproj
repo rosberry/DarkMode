@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064E7DEA23ACDA4200528628 /* UIApplication+UserInterfaceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E7DE923ACDA4200528628 /* UIApplication+UserInterfaceStyle.swift */; };
+		064E7DEC23ACDB5500528628 /* UserDefaults+InterfaceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E7DEB23ACDB5500528628 /* UserDefaults+InterfaceStyle.swift */; };
 		067955AC23A4C8A500818636 /* DarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 067955AA23A4C8A500818636 /* DarkMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		067955B523A4C91600818636 /* UIWindow+UserInferfaceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067955B223A4C91600818636 /* UIWindow+UserInferfaceStyle.swift */; };
 		067955B623A4C91600818636 /* UIImageAsset+TraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067955B323A4C91600818636 /* UIImageAsset+TraitCollection.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064E7DE923ACDA4200528628 /* UIApplication+UserInterfaceStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+UserInterfaceStyle.swift"; sourceTree = "<group>"; };
+		064E7DEB23ACDB5500528628 /* UserDefaults+InterfaceStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+InterfaceStyle.swift"; sourceTree = "<group>"; };
 		067955A723A4C8A500818636 /* DarkMode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DarkMode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		067955AA23A4C8A500818636 /* DarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DarkMode.h; sourceTree = "<group>"; };
 		067955AB23A4C8A500818636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 				067955B423A4C91600818636 /* UIColor+DarkMode.swift */,
 				067955B323A4C91600818636 /* UIImageAsset+TraitCollection.swift */,
 				067955B223A4C91600818636 /* UIWindow+UserInferfaceStyle.swift */,
+				064E7DE923ACDA4200528628 /* UIApplication+UserInterfaceStyle.swift */,
 				0687503223A72B2C00469525 /* UITraitCollection+DarkMode.swift */,
+				064E7DEB23ACDB5500528628 /* UserDefaults+InterfaceStyle.swift */,
 				067955AB23A4C8A500818636 /* Info.plist */,
 			);
 			path = DarkMode;
@@ -145,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				067955B723A4C91600818636 /* UIColor+DarkMode.swift in Sources */,
+				064E7DEA23ACDA4200528628 /* UIApplication+UserInterfaceStyle.swift in Sources */,
+				064E7DEC23ACDB5500528628 /* UserDefaults+InterfaceStyle.swift in Sources */,
 				067955B523A4C91600818636 /* UIWindow+UserInferfaceStyle.swift in Sources */,
 				0687503323A72B2C00469525 /* UITraitCollection+DarkMode.swift in Sources */,
 				067955B623A4C91600818636 /* UIImageAsset+TraitCollection.swift in Sources */,

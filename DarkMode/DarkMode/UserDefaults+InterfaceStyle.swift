@@ -6,6 +6,7 @@ import UIKit
 
 public extension UserDefaults {
 
+    ///Saved overrided user interface style.
     var overridedUserInterfaceStyle: UIUserInterfaceStyle {
         get {
             UIUserInterfaceStyle(rawValue: integer(forKey: #function)) ?? .unspecified

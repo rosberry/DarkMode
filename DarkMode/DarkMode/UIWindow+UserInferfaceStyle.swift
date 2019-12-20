@@ -14,3 +14,14 @@ public extension UIWindow {
         }
     }
 }
+
+public extension Array where Element: UIWindow {
+
+    /// Overrides the user interface style adopted by all elements.
+    /// - Parameter userInterfaceStyle: The user interface style adopted by all elements.
+    func override(_ userInterfaceStyle: UIUserInterfaceStyle) {
+        for window in self {
+            window.override(userInterfaceStyle)
+        }
+    }
+}

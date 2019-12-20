@@ -20,7 +20,7 @@ DarkMode is a small framework that simplify configuration of light and dark user
 
 ## Usage
 
-DarkMode contains 4 extensions of UIKit components.
+DarkMode contains 6 extensions of UIKit components.
 
 1. UIColor extension contains an initializer with light and dark colors:
 
@@ -51,6 +51,18 @@ DarkMode contains 4 extensions of UIKit components.
 
    ```swift
    UIApplication.shared.keyWindow?.override(.dark)
+   ```
+
+5. UIApplication extension allows you to override user interface style for all windows without SDK checks:
+
+   ```swift
+   UIApplication.shared.override(.dark)
+   ```
+
+6. UserDefaults extension allows you to save overrides user interface style:
+
+   ```swift 
+   UserDefaults.standard.overridedUserInterfaceStyle = .dark
    ```
 
 To see how it works together, please check [DarkModeExample](xcode://clone?repo=https%3A%2F%2Fgithub.com%2Frosberry%2Fdarkmode) project.

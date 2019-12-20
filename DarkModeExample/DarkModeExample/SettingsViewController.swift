@@ -23,13 +23,7 @@ final class SettingsViewController: UIViewController {
         guard let style = UIUserInterfaceStyle(rawValue: segmentedControl.selectedSegmentIndex) else {
             return
         }
-        for connectedScene in UIApplication.shared.connectedScenes {
-            if let scene = connectedScene as? UIWindowScene {
-                for window in scene.windows {
-                    window.override(style)
-                }
-            }
-        }
+        UIApplication.shared.override(style)
         UserDefaults.standard.overridedUserInterfaceStyle = style
     }
 
