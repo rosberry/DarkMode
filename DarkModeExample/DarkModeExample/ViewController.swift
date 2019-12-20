@@ -60,8 +60,7 @@ struct ViewControllerRepresentable: UIViewRepresentable {
 
     func makeUIView(context: Context) -> UIView {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
-        return viewController.view
+        return makeUIView(context: context, storyboard: storyboard, identifier: "ViewController")
     }
 
     func updateUIView(_ view: UIView, context: Context) {

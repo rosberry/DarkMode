@@ -46,8 +46,7 @@ struct SettingsViewControllerRepresentable: UIViewRepresentable {
 
     func makeUIView(context: Context) -> UIView {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "SettingsViewController")
-        return viewController.view
+        return makeUIView(context: context, storyboard: storyboard, identifier: "SettingsViewController")
     }
 
     func updateUIView(_ view: UIView, context: Context) {

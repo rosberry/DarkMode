@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064E7DE823ACC5C600528628 /* UIViewRepresentable+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064E7DE723ACC5C600528628 /* UIViewRepresentable+Storyboard.swift */; };
 		067955C523A4CA9D00818636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067955C423A4CA9D00818636 /* AppDelegate.swift */; };
 		067955C723A4CA9D00818636 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067955C623A4CA9D00818636 /* SceneDelegate.swift */; };
 		067955D123A4CA9F00818636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067955CF23A4CA9F00818636 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064E7DE723ACC5C600528628 /* UIViewRepresentable+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewRepresentable+Storyboard.swift"; sourceTree = "<group>"; };
 		067955C123A4CA9D00818636 /* DarkModeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkModeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067955C423A4CA9D00818636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		067955C623A4CA9D00818636 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				067955C623A4CA9D00818636 /* SceneDelegate.swift */,
 				067955DE23A4CFB200818636 /* ViewController.swift */,
 				067955DD23A4CFB200818636 /* SettingsViewController.swift */,
+				064E7DE723ACC5C600528628 /* UIViewRepresentable+Storyboard.swift */,
 				067955D823A4CBD100818636 /* UserDefaults+InterfaceStyle.swift */,
 				067955E623A4D0A100818636 /* UIColor+AppColor.swift */,
 				0687505723A759F400469525 /* Assets.xcassets */,
@@ -178,6 +181,7 @@
 				067955C523A4CA9D00818636 /* AppDelegate.swift in Sources */,
 				067955E723A4D0A100818636 /* UIColor+AppColor.swift in Sources */,
 				067955C723A4CA9D00818636 /* SceneDelegate.swift in Sources */,
+				064E7DE823ACC5C600528628 /* UIViewRepresentable+Storyboard.swift in Sources */,
 				067955DF23A4CFB200818636 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
