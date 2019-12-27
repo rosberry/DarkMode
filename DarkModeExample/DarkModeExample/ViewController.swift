@@ -69,7 +69,7 @@ struct ViewControllerRepresentable: UIViewRepresentable {
 }
 
 @available(iOS 13.0, *)
-struct ViewController_Preview: PreviewProvider {
+struct ViewControllerPreview: PreviewProvider {
 
     static var previews: some View {
         Group {
